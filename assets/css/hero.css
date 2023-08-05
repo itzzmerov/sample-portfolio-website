@@ -1,0 +1,229 @@
+#hero {
+    height: 100vh;
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+#hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#hero .container .leftDiv {
+    height: 400px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+#hero .container .rightDiv {
+    width: 38%;
+}
+
+.leftDiv .welcome {
+    font-family: var(--font-itim);
+    font-size: 2rem;
+    
+}
+
+.leftDiv .org_name {
+    font-family: var(--font-russo);
+    font-size: 7rem;
+    margin-top: 0px;
+}
+
+.leftDiv .org_subname {
+    font-family: var(--font-itim);
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.leftDiv .org_subname span {
+    color: var(--color-yellow);
+}
+
+.leftDiv .content {
+    font-family: var(--font-roboto);
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+.leftDiv .buttons {
+    margin-top: 5rem;
+}
+
+.leftDiv .buttons #join_btn {
+    border: var(--border-yellow);
+    padding: 1rem 5rem;
+    border-radius: 100px;
+    color: var(--color-yellow);
+    font-family: var(--font-itim);
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.leftDiv .buttons #join_btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.leftDiv .buttons #contact_btn {
+    border: var(--border-yellow);
+    padding: 1rem 5rem;
+    border-radius: 100px;
+    color: var(--color-yellow);
+    font-family: var(--font-itim);
+    font-size: 1.5rem;
+}
+
+.leftDiv .buttons #contact_btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+/********** RESPONSIVENESS STYLE *************/
+
+@media (max-width: 1669px) {
+    #hero .container .rightDiv {
+        width: 35%;
+    }
+
+    .leftDiv .welcome {
+        font-size: 2rem;
+    }
+
+    .leftDiv .org_name {
+        font-size: 5rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 1.5rem;
+    }
+
+    .leftDiv .content {
+        font-size: 1rem;
+    }
+
+    .leftDiv .buttons #join_btn {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .leftDiv .org_subname {
+        font-size: 1.2rem;
+    }
+
+    .leftDiv .buttons #join_btn {
+        margin-right: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .leftDiv .buttons #contact_btn {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 1210px) {
+
+    #hero .container .leftDiv {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .leftDiv .org_name {
+        font-size: 6rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 1.5rem;
+    }
+
+    .leftDiv .content {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .about_leftDiv .about_title {
+        font-size: 2rem;
+    }
+
+    .about_leftDiv .content {
+        font-size: 0.9rem;
+    }
+
+    .about_leftDiv .icons img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 992px) { /********* TABLET *********/
+    #hero .container .leftDiv {
+        width: 100%;
+    }
+
+    #hero .container .rightDiv {
+       display: none;
+    }
+
+    .leftDiv .org_name {
+        font-size: 5rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 1.5rem;
+    }
+
+    .leftDiv .content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 694px) { 
+    .leftDiv .org_name {
+        font-size: 4rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) { /********* PHONE *********/
+    .leftDiv .welcome {
+        font-size: 1.3rem;
+    }
+
+    .leftDiv .org_name {
+        font-size: 2.5rem;
+    }
+
+    .leftDiv .org_subname {
+        font-size: 1rem;
+    }
+
+    .leftDiv .content {
+        font-size: 0.9rem;
+    }
+
+    .leftDiv .buttons #join_btn {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+    .leftDiv .buttons #contact_btn {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+}

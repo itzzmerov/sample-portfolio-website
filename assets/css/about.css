@@ -1,0 +1,61 @@
+@import url("styles.css");
+
+#about {
+    height: 100vh;
+    background-image: url(../images/about-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#about .container .title {
+    color: var(--white);
+    font-family: var(--font-russo);
+    font-size: 3rem;
+}
+
+#about .container .about_content {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.about_leftDiv {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about_leftDiv img {
+    width: 515px;
+    height: 704px;
+    box-shadow: 15px -15px 5px 0px #14213D;
+}
+
+.about_rightDiv {
+    width: 65%;
+    padding: 0 2rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about_rightDiv .about_title {
+    color: var(--white);
+    font-family: var(--font-itim);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0 0 4rem 0;
+}

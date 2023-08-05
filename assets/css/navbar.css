@@ -1,0 +1,104 @@
+@import url("styles.css");
+
+header {  
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a img {
+    width: 95px;
+    height: auto;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 3rem;
+    font-weight: 500;
+}
+
+.navbar .toggle_btn {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .toggle_btn:hover {
+    color: var(--color-yellow);
+}
+
+.navbar .button .contact-btn {
+    padding: 1rem 2rem;
+    border: var(--border-yellow);
+    border-radius: var(--border-radius);
+    color: var(--color-yellow);
+}
+
+.navbar .button .contact-btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-size: 1.5rem;
+}
+
+/********* DROPDOWN MENU *********/
+
+.dropdown_menu {
+    position: absolute;
+    right: 2rem;
+    top: 100px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 270px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/********** RESPONSIVENESS STYLE *************/
+@media (max-width: 992px) { /********* TABLET *********/
+    .navbar .links, .navbar .button {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) { /********* PHONE *********/
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
