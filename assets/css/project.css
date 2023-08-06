@@ -1,0 +1,107 @@
+@import url("styles.css");
+
+#projects {
+    height: 100%;
+    background-image: url(../images/projects-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    overflow-x: hidden;
+    color: var(--color-white);
+}
+
+#projects .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects .container .title {
+    color: var(--dark-blue);
+    font-family: var(--font-russo);
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+#projects .container .projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+#projects .container .projects .project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .container .projects .project:nth-child(-n + 3) {
+    flex-basis: calc(33.33% - 2rem);
+    margin-bottom: 2rem;
+  }
+  
+#projects .container .projects .project:nth-child(n + 4) {
+    flex-basis: calc(33.33% - 2rem);
+}
+  
+.projects .project img{
+    width: 550px;
+    height: 400px;
+}
+
+.projects .project .project_title {
+    color: var(--dark-blue);
+    font-family: var(--font-russo);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.projects .project .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.projects .project .buttons a {
+    border: var(--border-yellow);
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    color: var(--color-yellow);
+    font-size: 1.5rem;
+}
+
+.projects .project .buttons a:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+/********** RESPONSIVENESS STYLE *************/
+@media (max-width: 576px) {
+    #projects .container .title {
+        font-size: 2rem;
+    }
+
+    .projects .project img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .projects .project .project_title {
+        font-size: 1.3rem;
+    }
+
+    .projects .project .buttons a {
+        font-size: 1rem;
+    }
+
+    .projects .project .buttons a:hover {
+        font-size: 1rem;
+    }
+}
