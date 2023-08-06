@@ -36,3 +36,47 @@ a:hover {
     font-size: 1.8rem;
     transition: 0.7s;
 }
+
+/*********** FOOTER CSS STYLES *************/
+footer {
+    background-color: var(--color-black);
+    font-family: var(--font-itim);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer .copyright {
+    font-size: 1.5rem;
+}
+
+footer .developer {
+    font-size: 1.2rem;
+}
+
+footer .developer a {
+    font-size: 1.2rem;
+    color: var(--color-yellow-variant);
+}
+
+footer .developer a:hover {
+    opacity: 0.7;
+}
+
+/*********** FOOTER RESPONSIVENESS *************/
+@media (max-width: 576px) {
+    footer .copyright {
+        font-size: 1rem;
+    }
+
+    footer .developer {
+        font-size: 1rem;
+    }
+
+    footer .developer a {
+        font-size: 1rem;
+    }
+}
