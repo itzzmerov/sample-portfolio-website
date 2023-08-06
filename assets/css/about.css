@@ -1,7 +1,7 @@
 @import url("styles.css");
 
 #about {
-    height: 100vh;
+    height: 100%;
     background-image: url(../images/about-bg.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -19,9 +19,10 @@
 }
 
 #about .container .title {
-    color: var(--white);
+    color: var(--color-dark-blue);
     font-family: var(--font-russo);
     font-size: 4rem;
+    margin: 4rem 0 0 0;
 }
 
 #about .container .about_content {

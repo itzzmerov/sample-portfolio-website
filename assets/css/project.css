@@ -22,7 +22,7 @@
     color: var(--dark-blue);
     font-family: var(--font-russo);
     font-size: 4rem;
-    margin-top: 2rem;
+    margin: 7rem 0 0 0;
 }
 
 #projects .container .projects {
