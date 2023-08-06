@@ -52,7 +52,7 @@
 }
 
 .leftDiv .content {
-    font-family: var(--font-roboto);
+    font-family: var(--font-itim);
     margin-top: 5rem;
     font-size: 1.2rem;
 }
@@ -106,7 +106,7 @@
     }
 
     .leftDiv .org_subname {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .leftDiv .content {
@@ -120,10 +120,6 @@
 
 @media (max-width: 1440px) {
 
-    .leftDiv .org_subname {
-        font-size: 1.2rem;
-    }
-
     .leftDiv .buttons #join_btn {
         margin-right: 1rem;
         padding: 1rem 2rem;
@@ -135,22 +131,8 @@
 }
 
 @media (max-width: 1210px) {
-
-    #hero .container .leftDiv {
-        width: 100%;
-        padding: 3rem;
-    }
-
     .leftDiv .org_name {
         font-size: 6rem;
-    }
-
-    .leftDiv .org_subname {
-        font-size: 1.5rem;
-    }
-
-    .leftDiv .content {
-        font-size: 1rem;
     }
 
 }
@@ -172,6 +154,7 @@
 @media (max-width: 992px) { /********* TABLET *********/
     #hero .container .leftDiv {
         width: 100%;
+        padding: 3rem;
     }
 
     #hero .container .rightDiv {
@@ -179,11 +162,11 @@
     }
 
     .leftDiv .org_name {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .leftDiv .org_subname {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .leftDiv .content {
@@ -193,37 +176,46 @@
 
 @media (max-width: 694px) { 
     .leftDiv .org_name {
-        font-size: 4rem;
-    }
-
-    .leftDiv .org_subname {
-        font-size: 1rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (max-width: 576px) { /********* PHONE *********/
+    #hero .container .leftDiv {
+        margin-top: 3rem;
+        align-items: flex-start;
+    }
+
     .leftDiv .welcome {
         font-size: 1.3rem;
     }
 
     .leftDiv .org_name {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .leftDiv .org_subname {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .leftDiv .content {
         font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .leftDiv .buttons {
+        display: flex;
+        margin-top: 2rem;
     }
 
     .leftDiv .buttons #join_btn {
-        padding: 1rem 1rem;
+        padding: 1rem;
         font-size: 1rem;
+        text-align: center;
     }
     .leftDiv .buttons #contact_btn {
         padding: 1rem 1rem;
         font-size: 1rem;
+        text-align: center;
     }
 }

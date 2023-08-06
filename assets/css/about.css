@@ -21,13 +21,13 @@
 #about .container .title {
     color: var(--white);
     font-family: var(--font-russo);
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #about .container .about_content {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin-top: 3rem;
 }
 
 .about_leftDiv {
@@ -53,9 +53,154 @@
 }
 
 .about_rightDiv .about_title {
-    color: var(--white);
     font-family: var(--font-itim);
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 0 0 4rem 0;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.about_rightDiv .about_subtitle {
+    font-family: var(--font-itim);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about_rightDiv .about_subtitle span {
+    color: var(--color-yellow-variant);
+}
+
+.about_rightDiv .content {
+    font-family: var(--font-itim);
+    font-size: 1.5rem;
+}
+
+.about_rightDiv .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.about_rightDiv .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about_rightDiv .button a {
+    border: var(--border-black);
+    padding: 1rem 5rem;
+    border-radius: var(--border-radius);
+    color: var(--color-dark-blue);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.about_rightDiv .button a:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+/********** RESPONSIVENESS STYLE *************/
+
+@media (max-width: 1669px) {
+    .about_leftDiv img {
+        width: 415px;
+        height: auto;
+    }
+
+    .about_rightDiv .about_title {
+        font-size: 3rem;
+    }
+
+    .about_rightDiv .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .content {
+        font-size: 1rem;
+    }
+
+    .about_rightDiv .button a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about_rightDiv .about_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1210px) {
+    #about {
+        height: 100%;
+    }
+    #about .container .about_content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about_leftDiv, .about_rightDiv {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_rightDiv {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .about_rightDiv .about_title {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .icons img {
+        width: 75px;
+    }
+
+    .about_rightDiv .button a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about_leftDiv img {
+        width: 300px;
+        height: auto;
+    }
+
+    #about .container .title {
+        font-size: 2rem;
+    }
+
+    .about_rightDiv .about_title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about_rightDiv .about_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about_rightDiv .button a {
+        padding: 1rem;
+    }
+
+    .about_rightDiv .icons img {
+        width: 50px;
+    }
+
+    .about_rightDiv .button {
+        gap: 1rem;
+    }
+
+    .about_rightDiv .button a {
+        font-size: 1rem;
+    }
 }
